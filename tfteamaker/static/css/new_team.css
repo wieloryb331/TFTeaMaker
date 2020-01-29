@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+img#unitimg{
+    height: 70px;
+    width: 70px;
+    margin: 2px;
+}
+.bw{
+    border-width: 4px;
+    box-shadow: 0px 0px 5px 5px rgba(153,59,72,1);
+}
+.your-team{
+
+}
+img.classimg{
+    color: darkcyan;
+}
+
+.classicon{
+    height: 45px;
+    width: 45px;
+}
+.classiconinside{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.classnumber{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: table;
+}

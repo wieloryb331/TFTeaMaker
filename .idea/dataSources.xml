@@ -7,5 +7,17 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/site.db</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="site [2]" uuid="e26eb221-4c4a-447c-87b9-e2930db661d1">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/tfteamaker/site.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="app" uuid="3c03758b-7307-4b37-8ae7-f7df33f4564f">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/tfteamaker/app.db</jdbc-url>
+    </data-source>
   </component>
 </project>

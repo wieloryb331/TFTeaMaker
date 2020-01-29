@@ -1,0 +1,124 @@
+{% extends "base_for_new_team.html" %}
+{% block content %}
+
+    <!-- One dollar champions -->
+
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+            <i class="text-success fas fa-money-bill-alt fa-2x"></i>
+        </div>
+        <div class="row justify-content-center">
+            {% for unit in units %}
+                {% if unit.cost == 1 %}
+                    <div id="{{ unit.name }}" class="unit" data-container="body" data-toggle="popover" data-trigger="hover"
+                         data-placement="top"
+                         data-content="{{ unit.class1 }} {{ unit.class2 }} {{ unit.class3 }}">
+                        <img id="unitimg"
+                             src="https://cdn.mobalytics.gg/stable/tft/champion/icon/set2/{{ unit.clean_name }}.png"
+                             alt="{{ unit.name }}">
+                    </div>
+                {% endif %}
+
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Two dollar champions -->
+
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+            <i class="text-success fas fa-money-bill-alt fa-2x"></i><i
+                class="text-success fas fa-money-bill-alt fa-2x"></i>
+        </div>
+        <div class="row justify-content-center">
+            {% for unit in units %}
+                {% if unit.cost == 2 %}
+                    <div id="{{ unit.name }}" class="unit" data-container="body" data-toggle="popover" data-trigger="hover"
+                         data-placement="top"
+                         data-content="{{ unit.class1 }} {{ unit.class2 }} {{ unit.class3 }}">
+                        <img id="unitimg"
+                             src="https://cdn.mobalytics.gg/stable/tft/champion/icon/set2/{{ unit.clean_name }}.png"
+                             alt="{{ unit.name }}">
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Three dollar champions -->
+
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+            <i class="text-success fas fa-money-bill-alt fa-2x"></i><i
+                class="text-success fas fa-money-bill-alt fa-2x"></i><i
+                class="text-success fas fa-money-bill-alt fa-2x"></i>
+        </div>
+        <div class="row justify-content-center">
+            {% for unit in units %}
+                {% if unit.cost == 3 %}
+                    <div id="{{ unit.name }}" class="unit" data-container="body" data-toggle="popover" data-trigger="hover"
+                         data-placement="top"
+                         data-content="{{ unit.class1 }} {{ unit.class2 }} {{ unit.class3 }}">
+                        <img id="unitimg"
+                             src="https://cdn.mobalytics.gg/stable/tft/champion/icon/set2/{{ unit.clean_name }}.png"
+                             alt="{{ unit.name }}">
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Four dollar champions -->
+
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+            <i class="text-success fas fa-money-bill-alt fa-2x"></i><i
+                class="text-success fas fa-money-bill-alt fa-2x"></i><i
+                class="text-success fas fa-money-bill-alt fa-2x"></i><i
+                class="text-success fas fa-money-bill-alt fa-2x"></i></div>
+        <div class="row justify-content-center">
+            {% for unit in units %}
+                {% if unit.cost == 4 %}
+                    <div id="{{ unit.name }}" class="unit" data-container="body" data-toggle="popover" data-trigger="hover"
+                         data-placement="top"
+                         data-content="{{ unit.class1 }} {{ unit.class2 }} {{ unit.class3 }}">
+                        <img id="unitimg"
+                             src="https://cdn.mobalytics.gg/stable/tft/champion/icon/set2/{{ unit.clean_name }}.png"
+                             alt="{{ unit.name }}">
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Five dollar champions -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <i class="text-success fas fa-money-bill-alt fa-2x"></i><i
+                class="text-success fas fa-money-bill-alt fa-2x"></i><i
+                class="text-success fas fa-money-bill-alt fa-2x"></i><i
+                class="text-success fas fa-money-bill-alt fa-2x"></i><i
+                class="text-success fas fa-money-bill-alt fa-2x"></i>
+        </div>
+        <div class="row justify-content-center">
+            {% for unit in units %}
+                {% if unit.cost == 5 %}
+                    <div id="{{ unit.name }}" class="unit" data-container="body" data-toggle="popover" data-trigger="hover"
+                         data-placement="top"
+                         data-content="{{ unit.class1 }} {{ unit.class2 }} {{ unit.class3 }}">
+                        <img id="unitimg"
+                             src="https://cdn.mobalytics.gg/stable/tft/champion/icon/set2/{{ unit.clean_name }}.png"
+                             alt="{{ unit.name }}">
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="container your-team mt-3 d-flex justify-content-center">
+
+    </div>
+
+    <script src="{{ url_for('static', filename="js/new_team.js") }}"></script>
+
+{% endblock %}
